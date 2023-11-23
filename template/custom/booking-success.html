@@ -1,0 +1,38 @@
+{% extends 'custom/base.html' %}
+{% load static %}
+{% block body_block %}
+
+
+
+
+
+<div class="content success-page-cont">
+<div class="container-fluid">
+<div class="row justify-content-center">
+<div class="col-lg-6">
+
+<div class="card success-card">
+<div class="card-body">
+<div class="success-cont">
+<i class="fas fa-check"></i>
+<h3>Message has been sent Successfully!</h3>
+<p>It is our joy to have the opportunity to collaborate.
+    We would love to hear from you! We will get back to you within 24-48 hours.</p>
+<p><a href="{% url 'home' %}">Go back to home</a></p>
+<a href="{% url 'home' %}" class="btn btn-primary view-inv-btn">Home</a> 
+
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+
+{% block form_block %}
+
+{% endblock %}
+
+{% endblock %}
