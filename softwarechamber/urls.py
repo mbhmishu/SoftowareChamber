@@ -21,6 +21,7 @@ from containtapp.views import home,contact_us,about_us,contac_form_view,booking_
 from django.conf import settings
 from django.conf.urls.static import static
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home, name='home'),
@@ -30,4 +31,7 @@ urlpatterns = [
     path('booking_success/', booking_success, name='booking_success'),
 
     
-]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+]
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
+    urlpatterns += static(settings.STATIC_URL, document_root = settings.STATIC_URL)
