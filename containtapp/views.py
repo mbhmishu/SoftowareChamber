@@ -16,13 +16,6 @@ from softwarechamber.settings import EMAIL_HOST_USER
 
 # Create your views here.
 
-def send_email_form_contact():
-    subject="Thank you for reaching out!"
-    message = "Dear [Name]," + " " + "data"
-    email="data['cost_email']"
-    recipient_list =[email]
-    send_mail(subject, message,EMAIL_HOST_USER, recipient_list, fail_silently=True)
-    return redirect('/booking_success')
 
 
 def home(request):
@@ -42,6 +35,20 @@ def about_us(request):
 
 
 def booking_success(request):
+    msg = Contact.objects.filter().first()
+    
+    name = msg.name
+    client_mail = msg.email
+    subject = msg.subject
+    client_message = msg.message
+    message =f"""Client {name},
+    from {client_mail}
+    {client_message}
+    """
+    email="mbhmishu@gmail.com"
+    recipient_list =[email]
+    send_mail(subject, message,EMAIL_HOST_USER, recipient_list, fail_silently=True)
+    msg.delete()
     return render(request, 'custom/booking-success.html')
 
 
@@ -79,5 +86,5 @@ mbhmishu@gmail.com
         recipient_list =[email]
         send_mail(subject, message,EMAIL_HOST_USER, recipient_list, fail_silently=True)
         print("Please check your email address and try again later to contact us.########################")
-        return redirect('/booking_success')
+        return redirect('/booking-success/')
     return render(request, 'custom/base.html')

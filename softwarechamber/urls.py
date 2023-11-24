@@ -28,7 +28,7 @@ urlpatterns = [
     path('contact-us/', contact_us, name='contact-us'),
     path('about-us/', about_us, name='about-us'),
     path('contac_form_view/', contac_form_view, name='contac_form_view'),
-    path('booking_success/', booking_success, name='booking_success'),
+    path('booking-success/', booking_success, name='booking-success'),
 
     
 ]
