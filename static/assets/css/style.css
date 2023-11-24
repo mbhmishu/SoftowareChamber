@@ -4477,7 +4477,7 @@ html.menu-opened body {
 	background: #e3e3e3;
 }
 .pharm-slide-home {
-	background: url(../img/bg-01.png),url(../img/bg-02.png),url(../img/bg-03.png), linear-gradient(90deg, #05497A 0%, #0C70C6 100%);
+	background: url(../img/bg-01.png),url(../img/slideimg1.png),url(../img/bg-03.png), linear-gradient(90deg, #05497A 0%, #0C70C6 100%);
     background-position: left 100px, right bottom, right 30% top 0, 0;
     background-repeat: no-repeat;
     border-radius: 0px 0px 350px 0px;
