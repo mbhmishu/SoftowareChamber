@@ -1,5 +1,5 @@
-{% load static %}
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>  
 <meta charset="utf-8">
@@ -412,8 +412,8 @@
 </div>
 <div class="row">
 <div class="col-md-12">
-
-<form action="{% url 'contac_form_view' %}" method="POST" enctype="multipart/form-data">
+  
+<form action="{% url 'contac_form_view' %}" method="POST" >
 {% csrf_token %}
 <div class="row">
 <div class="col-md-6">
