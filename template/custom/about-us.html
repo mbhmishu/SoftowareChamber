@@ -1,123 +1,76 @@
+{% extends 'custom/base.html' %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-
-<!-- Mirrored from doccure-html.dreamguystech.com/template/index-seven.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 28 Oct 2022 17:40:34 GMT -->
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-<title>softwarechamber</title>
-
-
-<link type="image/x-icon" href="{% static '' %}assets/img/faviconj.png" rel="icon">
-
-<link href="{% static '' %}assets/img/faviconk.png" rel="icon">
-
-<link rel="stylesheet" href="{% static '' %}assets/css/bootstrap.min.css">
-<link rel="stylesheet" href="{% static '' %}assets/plugins/fontawesome/css/fontawesome.min.css">
-<link rel="stylesheet" href="{% static '' %}assets/plugins/fontawesome/css/all.min.css">
-<link rel="stylesheet" href="{% static '' %}assets/css/feather.css">
-<link rel="stylesheet" href="{% static '' %}assets/css/owl.carousel.min.css">
-<link rel="stylesheet" href="{% static '' %}assets/css/aos.css">
-<link rel="stylesheet" href="{% static '' %}assets/css/style.css">
-</head>
-<body>
-	
-<div class="main-wrapper">
-
-<header class="header">
-<nav class="navbar navbar-expand-lg header-nav">
-<div class="navbar-header">
-<a id="mobile_btn" href="javascript:void(0);">
-<span class="bar-icon">
-<span></span>
-<span></span>
-<span></span>
-</span>
-</a>
-<a href="{% url 'home' %}" class="navbar-brand logo">
-<img src="{% static '' %}assets/img/logo.png" class="img-fluid" alt="Logo">
-</a>
-</div>
-<div class="main-menu-wrapper">
-<div class="menu-header">
-<a href="index.html" class="menu-logo">
-<img src="{% static '' %}assets/img/logo.png" class="img-fluid" alt="Logo">
-</a>
-<a id="menu_close" class="menu-close" href="javascript:void(0);">
-<i class="fas fa-times"></i>
-</a>
-</div>
-<ul class="main-nav">
-<li class="has-submenu active">
-<a href="{% url 'home' %}">Home </a>
-</li>
-<li class="">
-<a href="{% url 'about-us' %}">About Us </i></a>
-</li>
-<li class="">
-<a href="{% url 'contact-us' %}">Contact Us </a>
-</li>
-
-<li class="has-submenu">
-<a href="#">Blog </a>
-</li>
-</ul>
-</div>
-<ul class="nav header-navbar-rht">
-<li class="nav-item contact-item">
-<div class="header-contact-img">
-<i class="fas fa-phone-alt"></i>
-</div>
-<div class="header-contact-detail">
-<p class="contact-info-header"> +880 1832344599</p>
-</div>
-</li>
-<li>
-<a href="#" target="_blank"><i class="fab fa-facebook-f"></i> </a>
-</li>
-<li>
-<a href="#" target="_blank"><i class="fab fa-twitter"></i> </a>
-</li>
-<li>
-<a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-</li>
-<li>
-<a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-</li>
-<li>
-<a href="#" target="_blank"><i class="fab fa-dribbble"></i> </a>
-</li>
-</ul>
-
-</nav>
-</header>
-
-
-
-
-
 
 {% block body_block %} 
+
+<section class="home-search-section">
+<div class="container">
+<div class="wrapper-content">
+<div class="row align-items-center">
+<div class="col-lg-6">
+ <div class="doctor-search">
+<div class="banner-header aos" data-aos="fade-up">
+<h2>Turn your ideas into maintainable software that scales with your business. <br> <span class="highlighter"></span></h2>
+<p>We guide our clients through their digital transformation by providing competent and dedicated teams that can tackle the whole process from idea to reality.
+
+	Our secret sauce is the focus and attention to the small details that make a software team great. We take huge pride in recruiting amazing talents and retain them for a long period of time while also putting a great emphasis on building a culture based on collaboration, trust and curiosity.
+	
+	We carefully hand pick full time developers who are willing to commit to our mission to build better products and services for our clients in a cost efficient and collaborative way.
+</p>
+<h3>Why Choose Us</h3>
+<ul>
+	<li>We listen to their business needs</li>
+	<li>We understand how to build great products and services</li>
+	<li>We are a cost effective addition to their existing team</li>
+    <li>We constantly challenge ourselves to learn new things and keep our clients in the loop</li>  
+</ul>
+<h3>How we are different</h3>
+<p>We strive to build stable technology with beautiful interfaces that merge to become delightful experiences for our clients and their users. 
+<br>
+</p>
+<p><b>Software chamber</b> is an attractive workplace that puts
+	a strong emphasis on using a proven technology stack together with
+	enabling a new generation of developers to grow in a great work environment 
+	and to learn and experiment among like minded people. 
+</p>
+
+</div>
+<div class="doctor-form aos" data-aos="fade-up">
+
+</div>
+</div>
+</div>
+<div class="col-lg-6 aos" data-aos="fade-up">
+<img src="{% static '' %}assets/img/slideimg1.png" class="img-fluid dr-img" alt="">
+</div>
+</div>
+</div>
+</div>
+</section>
+
 
 <section class="about-section">
 <div class="container">
 <div class="row">
 <div class="col-lg-6 col-md-12">
 <div class="section-heading aos" data-aos="fade-up">
-<h2>Let's Work Together!</h2>
-<p>We are your software development team for ...</p>
-</div>
-<div class="section-heading aos" data-aos="fade-up">
-<h4 style="color: Lightseagreen;" class="mb-4">Software Solution</h4>
-<h4 style="color: Lightseagreen;" class="mb-4">Software Consultancy</h4>
-<h4 style="color: Lightseagreen;" class="mb-4">Professional training</h4>
-<h4 style="color: Lightseagreen;" class="mb-4">Continuous Support and Maintenance</h4>
-<p>Software chamber is a holistic partner for your business. So,Let's
-	Build products together with your dedicated team. It is our joy to have the opportunity to collaborate.
+<h2>We build amazing products together with You.</h2>
+<p>We are passionate about crafting products that bring your ideas to life. 
+	As a leading product agency specializing in Python, Django, JavaScript, 
+	and React development, we possess the expertise to create outstanding 
+	solutions that is tailor made for your business.
+	Our team of experienced developers is dedicated to 
+	delivering great software that drives innovation and propels your business forward.
 </p>
 </div>
-<a href="javascript:voide(0);" class="about-titile mb-4">Let's Work Together!</a>
+<div class="section-heading aos" data-aos="fade-up">
+<h4 style="color: Lightseagreen;" class="mb-4">Software chamber is a holistic partner for your business.
+	 So,Let's Build products together with your dedicated team. 
+	 It is our joy to have the opportunity to collaborate.
+</h4>
+
+</div>
+<a href="{% url 'contact-us' %}" class="about-titile mb-4">Let's Work Together!</a>
 </div>
 <div class="col-md-6">
 </div>
@@ -164,384 +117,9 @@
 </div>
 </div>
 </section>
-
-
-
-
-
-
-{% endblock %}
-
-
-<section class="section section-specialities">
-<div class="container-fluid">
-<div class="section-header text-center">
-<h2><span>Our stack powers</span> some of the worlds most beloved companies</h2>
-<p class="sub-title">We have carefully selected a few of the most beloved technology stacks that power everything from fast growing startups to billion dollar companies.</p>
-</div>
-<div class="row justify-content-center">
-<div class="col-md-9">
-
-<div class="specialities-slider slider">
-
-<div class="speicality-item text-center">
-<div class="speicality-img">
-<img src="{% static '' %}assets/img/specialities/react.png" class="img-fluid" alt="Speciality">
-<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-</div>
-<p>React</p>
-</div>
-
-
-<div class="speicality-item text-center">
-<div class="speicality-img">
-<img src="{% static '' %}assets/img/specialities/Python.png" class="img-fluid" alt="Speciality">
-<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-</div>
-<p>Python</p>
-</div>
-
-
-<div class="speicality-item text-center">
-<div class="speicality-img">
-<img src="{% static '' %}assets/img/specialities/django.jpg" class="img-fluid" alt="Speciality">
-<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-</div>
-<p>Django</p>
-</div>
-
-
-<div class="speicality-item text-center">
-<div class="speicality-img">
-<img src="{% static '' %}assets/img/specialities/drf.png" class="img-fluid" alt="Speciality">
-<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-</div>
-<p>DRF</p>
-</div>
-
-
-<div class="speicality-item text-center">
-<div class="speicality-img">
-<img src="{% static '' %}assets/img/specialities/fluter.png" class="img-fluid" alt="Speciality">
-<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-</div>
-<p>Flutter</p>
-</div>
-
-
-<div class="speicality-item text-center">
-<div class="speicality-img">
-<img src="{% static '' %}assets/img/specialities/redis.png" class="img-fluid" alt="Speciality">
-<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-</div>
-<p>Redis</p>
-</div>
-
-</div>
-
-</div>
-</div>
-</div>
-</section>
-
-<section class="section section-testimonial">
-<div class="container">
-<div class="section-header text-center mb-4">
-<h2>Build products together with your dedicated team.</h2>
-<p class="sub-title">We do everything from research, planning, execution, deployment and quality assurance.</p>
-</div>
-<div class="row justify-content-center">
-<div class="col-lg-12">
-
-<div class="testimonial-slider slider">
-
-<div class="testimonial-item text-center">
-<div class="testimonial-img">
-<img src="{% static '' %}assets/img/mishu.png" class="img-fluid" alt="Speciality">
-</div>
-<div class="testimonial-content">
-<p>CEO</p>
-<p class="user-name">- M B H Mishu</p>
-<p class="user-location mb-0">Dhaka, Bangladesh</p>
-<p><i class="fas fa-phone-alt"> +880 1832344599</i></p>
-</div>
-</div>
- 
-
-<div class="testimonial-item text-center">
-<div class="testimonial-img">
-<img src="{% static '' %}assets/img/fahim.jpg" class="img-fluid" alt="Speciality">
-</div>
-<div class="testimonial-content">
-<p>VP</p>
-<p class="user-name">- Fahim Shahriar</p>
-<p class="user-location mb-0">Selangor, Malaysia</p>
-<p><i class="fas fa-phone-alt"> +60 137414348</i></p>
-</div>
-</div>
-
-
-<div class="testimonial-item text-center">
-<div class="testimonial-img">
-<img src="{% static '' %}assets/img/patients/patient3.jpg" class="img-fluid" alt="Speciality">
-</div>
-<div class="testimonial-content">
-<p>VP</p>
-<p class="user-name">- Ismail</p>
-<p class="user-location mb-0">El Paso, USA</p>
-<p><i class="fas fa-phone-alt"> +1 315 369 5943</i></p>
-</div>
-</div>
-
-
-<div class="testimonial-item text-center">
-<div class="testimonial-img">
-<img src="{% static '' %}assets/img/habib.JPG" class="img-fluid" alt="">
-</div>
-<div class="testimonial-content">
-<p>VP</p>
-<p class="user-name">- Habibur Rahman</p>
-<p class="user-location mb-0">Dhaka, Bangladesh</p>
-<p><i class="fas fa-phone-alt"> On leave</i></p>
-</div>
-</div>
-
-
-
-<div class="testimonial-item text-center">
-<div class="testimonial-img">
-<img src="{% static '' %}assets/img/iqbal.JPG" class="img-fluid" alt="Speciality">
-</div>
-<div class="testimonial-content">
-<p>VP</p>
-<p class="user-name">- Iqbal</p>
-<p class="user-location mb-0">Dhaka, Bangladesh</p>
-<p><i class="fas fa-phone-alt"> On leave</i></p>
-</div>
-</div>
-
-
-
-
-</div>
-
-</div>
-</div>
-</div>
-</section>
-
-
-
-
 {% block form_block %}
-<section class="contact-form">
-<div class="container">
-<div class="section-header text-center">
-<h2>LET’S WORK TOGETHER</h2>
-<p><h4>It is our joy to have the opportunity to collaborate.</h4>We would love to hear from you! We will get back to you within 24-48 hours.</p>
-
-</div>
-<div class="row">
-<div class="col-md-12">
-
-<form action="{% url 'contac_form_view' %}" method="POST" enctype="multipart/form-data">
-{% csrf_token %}
-<div class="row">
-<div class="col-md-6">
-<div class="form-group">
-<label>Your name <span>_</span></label>
-<input type="text" name="name" class="form-control">
-</div>
-</div>
-<div class="col-md-6">
-<div class="form-group">
-<label>Your Email <span>*</span></label>
-<input type="text" name="email" required class="form-control">
-</div>
-</div>
-<div class="col-md-12">
-<div class="form-group">
-<label>Subject <span>_</span></label>
-<input type="text" name="subject" required class="form-control">
-</div>
-</div>
-<div class="col-md-12">
-<div class="form-group">
-<label>Message <span>*</span></label>
-<textarea name="message" required class="form-control">
-
-											</textarea>
-</div>
-</div>
-</div>
-<button class="btn bg-primary">Send Message</button>
-</form>
-</div>
-</div>
-</div>
-</section>
 
 {% endblock %}
 
+{% endblock %}
 
-<section class="our-blog-section">
-<div class="container">
-<div class="row">
-<div class="col-md-6">
-<div class="section-heading aos" data-aos="fade-up">
-<h2>Blogs and News</h2>
-<p>Read Professional Articles and Latest Articles</p>
-</div>
-</div>
-<div class="col-md-6 text-end aos" data-aos="fade-up">
-<div class="owl-nav slide-nav-4 text-end nav-control"></div>
-</div>
-</div>
-<div class="owl-carousel blogs owl-theme aos" data-aos="fade-up">
-<div class="item">
-<div class="our-blogs">
-<div class="blogs-img">
-<a href="blog-details.html"><img src="{% static '' %}assets/img/subcribenewsleter.png" alt="" class="img-fluid"></a>
-</div>
-<div class="blogs-info">
-<a href="blog-details.html"> <span>What is difference between website and web application?</span></a>
-<p>The content on a website can be viewed, read, or listened to, but the user cannot manipulate it.</p>
-<span class="blogs-time"><i class="far fa-clock"></i> 3 Dec 2023</span>
-</div>
-<div class="blogs-nav">
-<a href="blog-details.html" class="blogs-btn">Read More</a>
-</div>
-</div>
-</div>
-<div class="item">
-<div class="our-blogs">
-<div class="blogs-img">
-<a href="#"><img src="{% static '' %}assets/img/newsletter-bg.png" alt="" class="img-fluid"></a>
-</div>
-<div class="blogs-info">
-<a href="#"><span>হোস্টিং কি? হোস্টিং এর প্রকারভেদ ও হোস্টিং এর দাম নিয়ে বিস্তারিত</span></a>
-<p>কোন ওয়েবসাইট বা ব্লগ বানানোর জন্য, ওয়েবসাইট বা ব্লগের সমস্ত ডাটা যেমন-টেক্সট, ভিডিও, ইমেজ ইত্যাদি যেখানে জমা রাখা হয়</p>
-<span class="blogs-time"><i class="far fa-clock"></i> 10 Dec 2023</span>
-</div>
-<div class="blogs-nav">
-<a href="blog-details.html" class="blogs-btn">Read More</a>
-</div>
-</div>
-</div>
-<div class="item">
-<div class="our-blogs">
-<div class="blogs-img">
-<a href="blog-details.html"><img src="{% static '' %}assets/img/header-blogesss.png" alt="" class="img-fluid"></a>
-</div>
-<div class="blogs-info">
-<a href="#"><span>মোবাইল অ্যাপ ও ওয়েব অ্যাপ এর মধ্যে পার্থক্য কি</span></a>
-<p>মোবাইল অ্যাপ্লিকেশনগুলি দ্রুত নেতৃত্ব দেয় এবং ব্যবহারকারীদের জন্য ব্রাউজিংয়ের আরও পরিশীলিত অনুভূতি দেয় ৷ </p>
-<span class="blogs-time"><i class="far fa-clock"></i> 15 Dec 2021</span>
-</div>
-<div class="blogs-nav">
-<a href="blog-details.html" class="blogs-btn">Read More</a>
-</div>
-</div>
-</div>
-
-
-</div>
-</div>
-</section>
-
-
-
-
-
-<section class="newsletter-container">
-<div class="container">
-<div class="newsletter-box">
-<div class="row">
-<div class="col-lg-8 col-md-12">
-<div class="newsletter-content-box">
-<h3 class=" aos" data-aos="fade-up">Grab Our Newsletter</h3>
-<p class=" aos" data-aos="fade-up" data-aos-delay="300">Get the latest updates.</p>
-<div class="newsletter-input-section aos" data-aos="fade-up" data-aos-delay="500">
-<input type="text" placeholder="Enter Your Email Address">
-<a href="booking.html">Subscribe</a>
-</div>
-</div>
-</div>
-<div class="col-lg-4">
-<div class="newsletter-container-img text-end aos" data-aos="fade-up">
-<img src="{% static '' %}assets/img/subcribenewsleter.png" alt="">
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-
-<footer class="footer footer-2">
-<div class="footer-bottom">
-<div class="container-fluid">
-<div class="copyright">
-<div class="row">
-<div class="col-md-6 col-lg-6">
-<div class="copyright-text">
-<p class="mb-0">
-<a href="{% url 'home' %}" class="navbar-brand logo">
-<img src="{% static '' %}assets/img/logo.png" class="img-fluid" alt="Logo">
-</a>
-</p>
-</div>
-</div>
-<div class="col-md-6 col-lg-6">
-<div class="copyright-menu">
-<ul class="policy-menu">
-<li><a href="{% url 'contact-us' %}">Contact Us</a></li>
-<li>
-<a href="#" target="_blank"><i class="fab fa-facebook-f"></i> </a>
-</li>
-<li>
-<a href="#" target="_blank"><i class="fab fa-twitter"></i> </a>
-</li>
-<li>
-<a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-</li>
-<li>
-<a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-</li>
-<li>
-<a href="#" target="_blank"><i class="fab fa-dribbble"></i> </a>
-</li>
-
-</ul>
-</div>
-
-</div>
-</div>
-</div>
-
-</div>
-</div>
-
-</footer>
-
-</div>
-
-
-<script data-cfasync="false" src="{% static '' %}assets/cdn-cgi/email-decode.min.js"></script><script src="{% static '' %}assets/js/jquery-3.6.0.min.js"></script>
-
-<script src="{% static '' %}assets/js/bootstrap.bundle.min.js"></script>
-
-<script src="{% static '' %}assets/js/owl.carousel.min.js"></script>
-
-<script src="{% static '' %}assets/js/slick.js"></script>
-
-<script src="{% static '' %}assets/js/feather.min.js"></script>
-
-<script src="{% static '' %}assets/js/aos.js"></script>
-
-<script src="{% static '' %}assets/js/isotope.pkgd.min.js"></script>
-
-<script src="{% static '' %}assets/js/script.js"></script>
-</body>
-
-<!-- Mirrored from doccure-html.dreamguystech.com/template/index-seven.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 28 Oct 2022 17:40:51 GMT -->
-</html>

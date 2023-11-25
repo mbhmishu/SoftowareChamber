@@ -1,5 +1,4 @@
 from django.shortcuts import render, redirect
-from .utils import send_mail_to_user
 from .models import Contact
 
 
@@ -7,9 +6,6 @@ from django.core.mail import send_mail, EmailMessage
 from django.core.mail import EmailMessage
 from django.conf import settings
 from softwarechamber.settings import EMAIL_HOST_USER
-
-
-
 
 
 
@@ -55,7 +51,7 @@ def booking_success(request):
 
 
 def contac_form_view(request):
-    print("Welcome")
+    
     if request.method == "POST":
  
         name = request.POST.get("name", None)
@@ -64,7 +60,7 @@ def contac_form_view(request):
         message = request.POST.get("message", None)
         contac_data = Contact.objects.create(name=name,email=email,subject=subject,message=message)
         contac_data.save()
-        print("Contact created successfully: ")
+        
         subject="Thank you for reaching out!"
         message = f"""Dear {name},
 Thank you for contacting us. It's our joy to have the opportunity to collaborate.
@@ -85,6 +81,5 @@ mbhmishu@gmail.com
         email=contac_data.email
         recipient_list =[email]
         send_mail(subject, message,EMAIL_HOST_USER, recipient_list, fail_silently=True)
-        print("Please check your email address and try again later to contact us.########################")
         return redirect('/booking-success/')
     return render(request, 'custom/base.html')
