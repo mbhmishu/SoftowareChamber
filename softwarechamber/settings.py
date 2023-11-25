@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-#e3t55gfd_fz0w87v61fjf!!mb+%hhu)4)8n2sx__+3+$nxog)'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["*"]
 
@@ -141,7 +141,10 @@ STATIC_URL = 'static/'
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
-STATICFILES_DIRS = [BASE_DIR / "staticfiles"]
+
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = 'BASE_DIR / media'
 
 
 
@@ -151,6 +154,11 @@ STATICFILES_DIRS = [BASE_DIR / "staticfiles"]
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
+
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://www.softwarechamber.com',  
+]
 
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 EMAIL_HOST = "smtp.gmail.com"
